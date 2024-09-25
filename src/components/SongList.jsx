@@ -18,7 +18,7 @@ const SongList = ({ songs, setSongs }) => {
   };
 
   return (
-    <div className='container p-12'>
+    <div className='container p-12 m-auto'>
       <AddSongForm addSong={addSong} />
       
       <h3 className='font-bold text-2xl mb-4 p-6 underline text-green-300'>Song List</h3>

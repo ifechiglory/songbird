@@ -7,7 +7,7 @@ const SongItem = ({ song, deleteSong, updateSong }) => {
   const [isViewingLyrics, setIsViewingLyrics] = useState(false);
 
   return (
-    <div className='flex flex-col p-6 shadow-lg rounded-lg mt-6'>
+    <div className='flex flex-col p-6 shadow-lg rounded-lg mt-6 border-b'>
       <li>
       <p className='font-bold py-4 text-green-200'>{song.title} {song.artist && `| ${song.artist}`}</p>
       <div className="flex gap-4">
