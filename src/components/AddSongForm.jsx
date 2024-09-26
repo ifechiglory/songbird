@@ -17,7 +17,7 @@ const AddSongForm = ({ addSong }) => {
     >
       <div className="flex flex-col gap-2">
         <input
-          className="p-4 rounded bg-blue-800 w-1/2 m-auto text-gray-50 outline-0"
+          className="p-4 rounded bg-blue-800 w-full lg:w-1/2 lg:m-auto text-gray-50 outline-0"
           type="text"
           placeholder="Song Title"
           value={song.title}
@@ -25,14 +25,14 @@ const AddSongForm = ({ addSong }) => {
           required
         />
         <input
-          className="p-4 rounded bg-blue-800 w-1/2 m-auto text-gray-50 outline-0"
+          className="p-4 rounded bg-blue-800 w-full lg:w-1/2 lg:m-auto text-gray-50 outline-0"
           type="text"
           placeholder="Artist (optional)"
           value={song.artist}
           onChange={(e) => setSong({ ...song, artist: e.target.value })}
         />
         <textarea
-          className="p-4 rounded bg-blue-800 w-1/2 m-auto text-gray-50 outline-0"
+          className="p-4 rounded bg-blue-800 w-full lg:w-1/2 lg:m-auto text-gray-50 outline-0"
           placeholder="Lyrics"
           rows={5}
           required

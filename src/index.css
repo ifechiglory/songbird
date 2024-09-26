@@ -34,16 +34,16 @@ body {
 }
 
 h1, h2, h3 {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bold;
   color: #05094e;
 }
 
 a{
   border: 1px solid black;
-  padding: 7px;
+  padding: 4px;
   border-radius: 5px;
-  margin: 4px;
+  text-align: center;
 }
 
 a:hover{
