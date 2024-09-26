@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import localforage from 'localforage';
 import SongList from './components/SongList';
 import Search from './components/Search';
+import LyricsFormatter from './components/FormatLyrics';
 
 const App = () => {
   const [songs, setSongs] = useState([]);
@@ -24,19 +25,10 @@ const App = () => {
   return (
     
     <Router>
-      <div className='flex w-full px-10 py-6 bg-green-300 justify-between items-center'>
-        <h1>Song Manager</h1>
-
-        <nav className='flex justify-between'>
-        <Link to="/">Add Song</Link>
-        <Link to="/search">Search</Link>
-      </nav>
-      </div>
-     
-
       <Routes>
         <Route path="/" element={<SongList songs={songs} setSongs={setSongs} />} />
         <Route path="/search" element={<Search songs={songs} />} />
+        <Route path='/format' element={<LyricsFormatter/>}/>
       </Routes>
     </Router>
   );

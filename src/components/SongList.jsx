@@ -1,6 +1,7 @@
 import React from 'react';
 import SongItem from './SongItem';
 import AddSongForm from './AddSongForm';
+import Header from './Header';
 
 const SongList = ({ songs, setSongs }) => {
   const deleteSong = (title) => {
@@ -18,10 +19,13 @@ const SongList = ({ songs, setSongs }) => {
   };
 
   return (
-    <div className='container p-12 m-auto'>
+    
+    <>
+      <Header/>
+    <div className=' p-12 m-auto'>
       <AddSongForm addSong={addSong} />
       
-      <h3 className='font-bold text-2xl mb-4 p-6 underline text-green-300'>Song List</h3>
+      <h3 className='font-bold text-2xl mb-4 p-6 underline'>Song List</h3>
       <ul>
         {songs.map(song => (
           <SongItem
@@ -33,6 +37,7 @@ const SongList = ({ songs, setSongs }) => {
         ))}
       </ul>
     </div>
+    </>
   );
 };
 

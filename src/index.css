@@ -30,12 +30,13 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;	
-  background-color: rgb(21 128 61); 
+  background-color: #fff;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1, h2, h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #05094e;
 }
 
 a{
@@ -46,13 +47,17 @@ a{
 }
 
 a:hover{
-  background-color: forestgreen;
+  background-color: rgb(21, 7, 99);
   color: white;
-  border:1px solid darkgreen;
+  border:1px solid rgb(100, 13, 241);
 }
 
 input::placeholder, textarea::placeholder{
   color: white;
+}
+
+.format_text::placeholder{
+  color: #05094e;
 }
 
 button {
@@ -62,7 +67,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: rgb(187 247 208);
+  background-color: #bbc3f7;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -71,6 +76,12 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+button:hover{
+  background-color: rgb(30 64 175);
+  color: white;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -98,14 +109,12 @@ button:focus-visible {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: rgb(22 163 74);
+  background-color: rgb(147 197 253);
 }
 
 .modal-content button {
   margin-top: 10px;
   padding: 10px 15px;
-  background-color: rgb(187 247 208);
-  color: rgb(22 163 74);
   border: none;
   border-radius: 4px;
   margin-left: 10px;
@@ -113,6 +122,6 @@ button:focus-visible {
 }
 
 .modal-content button:hover {
-  background-color: forestgreen;
+  background-color: rgb(6, 28, 92);
   color: white;
 }

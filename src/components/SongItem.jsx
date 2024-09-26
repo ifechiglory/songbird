@@ -9,10 +9,10 @@ const SongItem = ({ song, deleteSong, updateSong }) => {
   return (
     <div className='flex flex-col p-6 shadow-lg rounded-lg mt-6 border-b'>
       <li>
-      <p className='font-bold py-4 text-green-200'>{song.title} {song.artist && `| ${song.artist}`}</p>
+      <p className='font-bold py-4 text-blue-600'>{song.title} {song.artist && `| ${song.artist}`}</p>
       <div className="flex gap-4">
-        <button onClick={() => setIsEditing(true)} className='bg-green-500'>Edit</button>
-        <button onClick={() => deleteSong(song.title)} className='bg-red-600'>Delete</button>
+        <button onClick={() => setIsEditing(true)} className='rounded-lg'>Edit</button>
+        <button onClick={() => deleteSong(song.title)} className='bg-red-600 hover:bg-red-800 hover:text-white'>Delete</button>
         <button onClick={() => setIsViewingLyrics(true)}>View Lyrics</button>
       </div>
 

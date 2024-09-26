@@ -10,13 +10,14 @@ const AddSongForm = ({ addSong }) => {
   };
 
   return (
+    <>
     <form
       onSubmit={handleSubmit}
       className="flex flex-col p-6 rounded-md shadow-lg"
     >
       <div className="flex flex-col gap-2">
         <input
-          className="p-4 rounded bg-green-600 w-1/2 m-auto text-gray-50 outline-0"
+          className="p-4 rounded bg-blue-800 w-1/2 m-auto text-gray-50 outline-0"
           type="text"
           placeholder="Song Title"
           value={song.title}
@@ -24,14 +25,14 @@ const AddSongForm = ({ addSong }) => {
           required
         />
         <input
-          className="p-4 rounded bg-green-600 w-1/2 m-auto text-gray-50 outline-0"
+          className="p-4 rounded bg-blue-800 w-1/2 m-auto text-gray-50 outline-0"
           type="text"
           placeholder="Artist (optional)"
           value={song.artist}
           onChange={(e) => setSong({ ...song, artist: e.target.value })}
         />
         <textarea
-          className="p-4 rounded bg-green-600 w-1/2 m-auto text-gray-50 outline-0"
+          className="p-4 rounded bg-blue-800 w-1/2 m-auto text-gray-50 outline-0"
           placeholder="Lyrics"
           rows={5}
           required
@@ -41,11 +42,12 @@ const AddSongForm = ({ addSong }) => {
       </div>
       <button
         type="submit"
-        className="rounded-full w-36 text-green-900 bg-green-200 border-0 mx-auto my-4 hover:bg-green-400"
+        className="rounded-full w-36 text-blue-900 border-0 mx-auto my-4 hover:text-white"
       >
         Add Song
       </button>
     </form>
+    </>
   );
 };
 
