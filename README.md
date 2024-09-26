@@ -46,13 +46,13 @@ A simple React application for managing song lyrics, featuring searching, editin
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/song-manager.git
+   git clone https://github.com/yourusername/songdb.git
    ```
 
 2. Navigate into the project directory:
 
    ```bash
-   cd song-manager
+   cd songdb
    ```
 
 3. Install the dependencies:
