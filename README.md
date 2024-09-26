@@ -19,25 +19,26 @@ A simple React application for managing song lyrics, featuring searching, editin
 - **Vite**: Fast development environment and build tool for modern web applications.
 
 ## 📂 Project Structure
-
 .
 ├── src
 │   ├── components
 │   │   ├── AddSongForm.jsx   # Form to add songs 
-|   |   ├── CopyButton.jsx    # Button to copy lyrics to clipboard
-│   │   ├── EditSongModal.jsx # Modal for editting songs
-│   │   ├── FormatLyrics.jsx  # Component to format and copy lyrics
-│   │   ├── Header.jsx        # Header component
-│   │   ├── LyricsModal.jsx   # Modal for viewing lyrics
-│   │   ├── Search.jsx        # Search page for searching songs by title or lyrics
-│   │   ├── SongItem.jsx      # Component for each song stored
-│   │   ├── SongList.jsx      # Page displaying the list of songs
-│   ├── App.jsx               # Main App component
-│   └── main.jsx              # ReactDOM render
-|   └── index.html            # Main HTML file
-├── tailwind.config.js        # Tailwind CSS configuration
-├── package.json              # Project dependencies and scripts
-└── README.md                 # Project documentation
+│   │   ├── CopyButton.jsx     # Button to copy lyrics to clipboard
+│   │   ├── EditSongModal.jsx  # Modal for editing songs
+│   │   ├── FormatLyrics.jsx    # Component to format and copy lyrics
+│   │   ├── Header.jsx         # Header component
+│   │   ├── LyricsModal.jsx    # Modal for viewing lyrics
+│   │   ├── Search.jsx         # Search page for searching songs by title or lyrics
+│   │   ├── SongItem.jsx       # Component for each song stored
+│   │   ├── SongList.jsx       # Page displaying the list of songs
+│   ├── App.jsx                # Main App component
+│   └── main.jsx               # ReactDOM render
+|── index.html                  # Main HTML file
+├── tailwind.config.js         # Tailwind CSS configuration
+├── package.json               # Project dependencies and scripts
+└── README.md                  # Project documentation
+
+
 ```
 
 ## 📦 Installation
