@@ -19,7 +19,7 @@ A simple React application for managing song lyrics, featuring searching, editin
 - **Vite**: Fast development environment and build tool for modern web applications.
 
 ## 📂 Project Structure
-.
+```
 ├── src
 │   ├── components
 │   │   ├── AddSongForm.jsx   # Form to add songs 
