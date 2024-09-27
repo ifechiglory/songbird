@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 
 const AddSongForm = ({ addSong }) => {
-  const [song, setSong] = useState({ title: "", artist: "", lyrics: "" });
+  const [song, setSong] = useState({ title: "", artist: "", lyrics: "" }); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     addSong(song);
     setSong({ title: "", artist: "", lyrics: "" });
   };
+  
 
   return (
     <>

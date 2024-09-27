@@ -3,6 +3,8 @@ import CopyButton from './CopyButton';
 import '../index.css';
 
 const LyricsModal = ({ song, closeModal }) => {
+  
+  const formattedLyrics = song.lyrics.replace(/\n/g, '\n\n');
 
   return (
     <div className="modal">
@@ -11,7 +13,7 @@ const LyricsModal = ({ song, closeModal }) => {
         <pre style={{ whiteSpace: 'pre-wrap', lineHeight: '2' }}>
           {song.lyrics || "No lyrics available"}
         </pre>
-        <CopyButton/>
+        <CopyButton textToCopy={formattedLyrics} />
         <button onClick={closeModal}>Close</button>
       </div>
     </div>

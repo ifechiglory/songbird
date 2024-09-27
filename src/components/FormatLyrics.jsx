@@ -6,13 +6,12 @@ const LyricsFormatter = () => {
   const [lyrics, setLyrics] = useState('');
   const [formattedLyrics, setFormattedLyrics] = useState('');
 
-  // Format lyrics by adding double line spacing
   const formatLyrics = () => {
     const doubleSpacedLyrics = lyrics.replace(/\n/g, '\n\n');
     setFormattedLyrics(doubleSpacedLyrics);
   };
 
-  // Clear the textarea content
+
   const clearLyrics = () => {
     setLyrics('');
     setFormattedLyrics('');
