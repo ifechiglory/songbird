@@ -31,7 +31,7 @@ const SearchPage = ({ songs }) => {
         placeholder="Search by title or lyrics"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="w-full p-4 rounded bg-blue-800 my-4 text-white"
+        className="w-full p-4 rounded bg-blue-800 my-4 text-white placeholder:text-white"
       />
 
       <div className='h-96 overflow-y-scroll'>
@@ -49,7 +49,7 @@ const SearchPage = ({ songs }) => {
                   </div>
 
                   {/* Right Column: Lyrics Snippet */}
-                  <div className="relative border-l-2 px-6">
+                  <div className="relative px-2">
                     {expandedSong === song.title ? (
                       <pre className="whitespace-pre-wrap leading-loose text-blue-800">
                         {song.lyrics}
@@ -61,7 +61,7 @@ const SearchPage = ({ songs }) => {
                     )}
 
                     <button
-                      className="mt-2 text-blue-500 mr-4 hover:text-white hover:underline focus:outline-none"
+                      className="mt-2 text-blue-200 mr-4 hover:text-white hover:underline focus:outline-none"
                       onClick={() => toggleExpand(song.title)}
                     >
                       {expandedSong === song.title ? 'Show Less' : 'Show More'}
