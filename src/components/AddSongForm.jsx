@@ -8,7 +8,6 @@ const AddSongForm = ({ addSong }) => {
     addSong(song);
     setSong({ title: "", artist: "", lyrics: "" });
   };
-  
 
   return (
     <>
@@ -45,7 +44,7 @@ const AddSongForm = ({ addSong }) => {
         type="submit"
         className="rounded-full w-40 text-blue-100 border-0 mx-auto my-6 hover:text-white"
       >
-        Add Song
+        Save
       </button>
     </form>
     </>

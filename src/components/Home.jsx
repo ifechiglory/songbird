@@ -26,7 +26,7 @@ const SongList = ({ songs, setSongs }) => {
     <>
       <Header />
       <div className="py-6 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full lg:fixed">
           <div className="w-full">
             <AddSongForm addSong={addSong} />
           </div>

@@ -8,7 +8,7 @@ function Header(){
         <h1 className="text-white">SongBird</h1>
 
         <nav className='flex justify-between items-center gap-2'>
-        <Link to="/">Add Song</Link>
+        <Link to="/">New Song</Link>
         <Link to="/search">Search</Link>
         <Link to="/format">Format Lyrics</Link>
       </nav>
