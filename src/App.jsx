@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import localforage from 'localforage';
-import SongList from './components/SongList';
+import SongList from './components/Home';
 import Search from './components/Search';
 import LyricsFormatter from './components/FormatLyrics';
 
