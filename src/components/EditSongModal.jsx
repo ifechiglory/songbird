@@ -30,6 +30,7 @@ const EditSongModal = ({ song, closeModal, updateSong }) => {
           <textarea
             placeholder="Lyrics (optional)"
             value={updatedSong.lyrics}
+            rows={8}
             onChange={(e) => setUpdatedSong({ ...updatedSong, lyrics: e.target.value })}
           />
           <button type="submit">Save</button>
