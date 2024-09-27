@@ -11,14 +11,9 @@ const SearchPage = ({ songs }) => {
     song.lyrics?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  
   const toggleExpand = (title) => {
     setExpandedSong(expandedSong === title ? null : title); // Toggle expand/collapse
-  };
-
-  const copyToClipboard = (lyrics) => {
-    const formattedLyrics = lyrics.replace(/\n/g, '\n\n');
-    navigator.clipboard.writeText(formattedLyrics);
-    alert('Lyrics copied to clipboard!');
   };
 
   return (
@@ -67,7 +62,7 @@ const SearchPage = ({ songs }) => {
                       {expandedSong === song.title ? 'Show Less' : 'Show More'}
                     </button>
 
-                    <CopyButton/>
+                    <CopyButton textToCopy={song.lyrics}/>
                   </div>
                 </div>
               </li>
@@ -87,3 +82,4 @@ const SearchPage = ({ songs }) => {
 };
 
 export default SearchPage;
+
