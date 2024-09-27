@@ -61,7 +61,7 @@ const SearchPage = ({ songs }) => {
                     )}
 
                     <button
-                      className="mt-2 text-blue-200 mr-4 hover:text-white hover:underline focus:outline-none"
+                      className="mt-2 text-blue-200 mr-2 hover:text-white hover:underline focus:outline-none"
                       onClick={() => toggleExpand(song.title)}
                     >
                       {expandedSong === song.title ? 'Show Less' : 'Show More'}
