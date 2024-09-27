@@ -3,8 +3,11 @@ import React, { useState } from 'react';
 const CopyButton = ({ textToCopy }) => {
   const [copyButtonText, setCopyButtonText] = useState('Copy Lyrics');
 
+
+
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(textToCopy);
+    const formattedLyrics = textToCopy.replace(/\n/g, '\n\n');
+    navigator.clipboard.writeText(formattedLyrics);
     setCopyButtonText('Copied');
 
     setTimeout(() => {
