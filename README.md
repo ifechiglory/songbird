@@ -52,7 +52,7 @@ A simple React application for managing song lyrics, featuring searching, editin
 2. Navigate into the project directory:
 
    ```bash
-   cd songdb
+   cd songbird
    ```
 
 3. Install the dependencies:
