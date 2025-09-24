@@ -1,4 +1,4 @@
-# 🎵 Song Manager App
+# 🎵 SongBird
 
 A simple React application for managing song lyrics, featuring searching, editing, formatting, and copy-to-clipboard functionalities. The app allows users to store songs locally, format lyrics, and search through them with ease. The design is styled with **Tailwind CSS** and includes persistent storage using **localforage**.
 
